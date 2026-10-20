@@ -72,6 +72,20 @@
 4. 用 **微信开发者工具** 导入 WX-WASM-SDK-V2 转换产物
 5. 真机预览 / 调试
 
+### 获取微信小游戏转换插件
+
+微信小游戏转换插件（`Assets/WX-WASM-SDK-V2/`）**未包含在本仓库中**。
+该目录约 130 MB，且含 macOS / Linux 专用二进制文件，在 Windows 下无法使用，
+因此通过 `.gitignore` 排除。
+
+请从微信官方渠道获取后放入 `Assets/WX-WASM-SDK-V2/`，目录结构如下：
+
+```
+Gunfire-Brawl/
+└── Assets/
+    └── WX-WASM-SDK-V2/    # ← 自行放入
+```
+
 ---
 
 ## 目录结构
@@ -82,7 +96,7 @@ Gunfire-Brawl/
 │   ├── Scenes/            # 场景文件
 │   ├── Resources/         # 资源目录
 │   ├── WebGLTemplates/    # WebGL 模板
-│   └── WX-WASM-SDK-V2/    # 微信小游戏转换插件
+│   └── WX-WASM-SDK-V2/    # 微信小游戏转换插件（需自行放入）
 ├── Packages/              # Unity 包依赖
 ├── ProjectSettings/       # 项目设置
 ├── .gitignore
